@@ -1,0 +1,25 @@
+{
+  "name": "imm-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module":"es/index.js",
+  "scripts": {
+    "build": "vite build & esno build/buildLess",
+    "build:less": "esno build/buildLess",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "imm-ui",
+    "vue3组件库"
+  ],
+  "license": "MIT",
+  "typings": "lib/index.d.ts",
+  "dependencies": {
+    "@imm-ui/utils": "workspace:^1.0.0"
+  }
+}
