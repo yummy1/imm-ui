@@ -6,6 +6,9 @@ yarn-debug.log*
 yarn-error.log*
 tests/**/coverage/
 
+packages/components/es/*
+packages/components/lib/*
+
 # Editor directories and files
 .idea
 .vscode

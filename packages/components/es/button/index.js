@@ -1,10 +1,5 @@
 import button from "./button.js";
-const withInstall = (comp) => {
-  comp.install = (app) => {
-    app.component(comp.name, comp);
-  };
-  return comp;
-};
+import { withInstall } from "../utils/install.js";
 const Button = withInstall(button);
 export {
   Button as default

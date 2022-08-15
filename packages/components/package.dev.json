@@ -1,0 +1,15 @@
+{
+    "name": "imm-ui",
+    "version": "2.0.3",
+    "main": "index.ts",
+    "scripts": {
+      "build": "vite build & esno build/buildLess"
+    },
+    "files": ["es", "lib"],
+    "keywords": ["imm-ui", "vue3组件库"],
+    "author": "小月",
+    "license": "MIT",
+    "description": "",
+    "typings": "lib/index.d.ts"
+}
+  

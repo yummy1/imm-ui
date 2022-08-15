@@ -1,0 +1,42 @@
+.m-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.m-linm--primary {
+  color: #409eff;
+}
+.m-linm--primary:hover {
+  color: #66b1ff;
+}
+
+.m-link.is-disabled {
+  cursor: not-allowed;
+}
+
+.m-link.is-disabled {
+  cursor: not-allowed;
+}
+
+.m-linm--primary.is-disabled {
+  color: #a0cfff;
+}
+
+.m-link.is-underline:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  bottom: 0;
+  border-bottom: 1px solid #409eff;
+}
