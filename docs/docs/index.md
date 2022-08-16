@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: IMM
+title: imm-ui
 titleTemplate: 一个Vue3组件库
 
 hero:

@@ -1,25 +1,24 @@
 export default {
     themeConfig: {
-      // siteTitle: false,
-      // logo: "/logo.png",
-      // title: '哈喽',
+      siteTitle: false,
+      logo: "/logo.png",
       nav: [
-        { text: "指南", link: "/guild/installation" },
+        { text: "指南", link: "/guide/installation" },
         { text: "组件", link: "/examples/button/" },
       ],
-      socialLinks: [{ icon: "github", link: "https://gitee.com/geeksdidi" }],
+      socialLinks: [{ icon: "github", link: "https://github.com/yummy1/imm-ui" }],
       sidebar: {
-        "/guild/": [
+        "/guide/": [
           {
             text: "基础",
             items: [
               {
                 text: "安装",
-                link: "/guild/installation",
+                link: "/guide/installation",
               },
               {
                 text: "快速开始",
-                link: "/guild/quickstart",
+                link: "/guide/quickstart",
               },
             ],
           },
