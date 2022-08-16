@@ -9,7 +9,7 @@ hero:
   text: 一个Vue3组件库
   tagline: 欢迎指点学习
   image:
-    src: /logo.png
+    src: /home.png
     alt: imm
   actions:
     - theme: brand
