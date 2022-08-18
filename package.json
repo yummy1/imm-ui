@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:imm": "gulp -f packages/components/script/build/gulpfile.ts"
+    "build:imm": "gulp -f packages/components/script/build/gulpfile.ts",
+    "publish:imm": "gulp -f packages/components/script/publish/gulpfile.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "yummyMao",
   "license": "ISC",
   "devDependencies": {
     "@types/gulp": "^4.0.9",

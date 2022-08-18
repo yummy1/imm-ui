@@ -9,7 +9,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "keywords": [],
-  "author": "",
+  "author": "yummyMao",
   "license": "ISC",
   "devDependencies": {
     "vitepress": "1.0.0-alpha.4"

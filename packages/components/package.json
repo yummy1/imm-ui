@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "build": "vite build & esno build/buildLess",
-    "build:less": "esno build/buildLess",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "vite build"
   },
   "files": [
     "es",

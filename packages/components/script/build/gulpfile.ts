@@ -1,5 +1,5 @@
 import { spawn } from 'child_process'
-import { series, src, dest, task } from 'gulp'
+import { series, src, dest, task, parallel } from 'gulp'
 import less from "gulp-less"
 import autoprefixer from 'gulp-autoprefixer'
 import { componentPath } from '../utils/paths'
@@ -30,4 +30,15 @@ const buildStyle = () => {
         .pipe(dest(`${componentPath}/dist/es`));
 };
 
-export default series(async () => run(`rm -rf ${componentPath}/dist`), async () => buildStyle())
+//打包组件
+const buildComponent = async () => {
+    await run(`cd ${componentPath}`)
+    run('pnpm run build')
+}
+
+export default series(
+    async () => run(`rm -rf ${componentPath}/dist`),
+    parallel(
+        async () => buildStyle(),
+        async () => buildComponent()
+    ))
