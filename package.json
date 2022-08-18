@@ -5,7 +5,13 @@
   "main": "index.js",
   "scripts": {
     "build:imm": "gulp -f packages/components/script/build/gulpfile.ts",
-    "publish:imm": "gulp -f packages/components/script/publish/gulpfile.ts"
+    "publish:imm": "gulp -f packages/components/script/publish/gulpfile.ts",
+    "docs:dev": "pnpm run --filter ./docs docs:dev",
+    "docs:build": "pnpm run --filter ./docs docs:build",
+    "docs:serve": "pnpm run --filter ./docs docs:serve",
+    "examples:dev": "pnpm run --filter ./examples dev",
+    "test": "pnpm run --filter ./packages/components test",
+    "coverage": "pnpm run --filter ./packages/components coverage"
   },
   "keywords": [],
   "author": "yummyMao",
@@ -16,16 +22,20 @@
     "@types/gulp-less": "^0.0.32",
     "@types/less": "^3.0.3",
     "@vitejs/plugin-vue": "^3.0.1",
+    "@vitest/coverage-c8": "^0.22.1",
+    "@vue/test-utils": "^2.0.2",
     "cpy": "^9.0.1",
     "fast-glob": "^3.2.11",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-less": "^5.0.0",
+    "happy-dom": "^6.0.4",
     "less": "^4.1.3",
     "sucrase": "^3.25.0",
     "typescript": "^4.7.4",
     "vite": "^3.0.3",
     "vite-plugin-dts": "^1.4.0",
+    "vitest": "^0.22.1",
     "vue": "^3.2.36"
   }
 }
