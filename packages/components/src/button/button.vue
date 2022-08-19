@@ -1,15 +1,15 @@
 <!-- button.vue -->
 <template>
     <button class="imm-button" :class="styleClass">
-        <Icon class="icon" v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" />
-        <slot />
-        <Icon class="icon" v-if="iconFont.position == 'right' && iconFont.iconName" :name="iconFont.iconName" />
+        <Icon v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" />
+        <span v-if="slotDefault"><slot /></span>
+        <Icon v-if="iconFont.position == 'right' && iconFont.iconName" :name="iconFont.iconName" />
     </button>
 </template>
 
 <script lang="ts">
 import './style/index.less'
-import { defineComponent, computed } from 'vue'
+import { defineComponent, computed, useSlots } from 'vue'
 import { buttonProps } from './types'
 import Icon from '../icon/icon.vue'
 export default defineComponent({
@@ -23,6 +23,7 @@ export default defineComponent({
                 [`imm-button--${props.type}`]: props.type,
                 'is-plain': props.plain,
                 'is-round': props.round,
+                'is-circle': props.circle,
                 'is-disabled': props.disabled,
                 [`imm-button--${props.size}`]: props.size,
             }
@@ -38,10 +39,14 @@ export default defineComponent({
             }
         })
 
+        //判断<slot/>是否有传值
+       const slotDefault = !!useSlots().default;
+
         return {
             styleClass,
             Icon,
-            iconFont
+            iconFont,
+            slotDefault
         };
     },
 });

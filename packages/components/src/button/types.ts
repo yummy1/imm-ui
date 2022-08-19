@@ -4,8 +4,9 @@ import { ExtractPropTypes } from 'vue'
 
 export const ButtonType = ['primary', 'success', 'info', 'warning', 'danger', 'text']
 
-export const ButtonSize = ['midium', 'small', 'mini'];
+export const ButtonSize = ['medium', 'small', 'mini'];
 
+export const IconPosition = ['left', 'right']
 
 export const buttonProps = {
   type: {
@@ -16,9 +17,15 @@ export const buttonProps = {
   },
   plain: Boolean,
   round: Boolean,
+  circle: Boolean,
   disabled: Boolean,
   icon: String,
-  iconPosition: String,
+  iconPosition: {
+    type: String,
+    validator(value: string) {
+      return IconPosition.includes(value)
+    }
+  },
   size: {
     type: String,
     validator(value: string) {

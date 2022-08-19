@@ -4,8 +4,6 @@ node_js:
 install:
   - pnpm install
 script:
-  - cd docs
-  - pnpm install
   - pnpm run docs:build
 deploy:
   provider: pages

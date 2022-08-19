@@ -14,5 +14,4 @@ export const publish = async () => {
     //在dist下执行发布命令
     await run('npm publish', `${componentPath}/dist`)
     // run('pnpm publish')
-
 }

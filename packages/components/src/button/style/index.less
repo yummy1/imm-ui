@@ -16,8 +16,11 @@
     padding: 12px 20px;
     font-size: 14px;
     border-radius: 4px;
-    .icon {
-      margin: 0 4px;
+    & [class*=imm-icon]+span {
+      margin-left: 6px;
+    }
+    & span+[class*=imm-icon] {
+      margin-left: 6px;
     }
   
     &:hover {
@@ -32,6 +35,10 @@
     background-image: none;
     background-color: #fff;
     border-color: #ebeef5;
+  }
+  .imm-button.is-circle {
+    border-radius: 50%;
+    padding: 8px;
   }
   .imm-button--primary {
     color: #fff;
@@ -170,8 +177,8 @@
   }
   .imm-button--warning.is-plain {
     color: #e6a23c;
-    background: #ecf5ff;
-    border-color: #b3d8ff;
+    background: #fdf6ec;
+    border-color: #f3d19e;
     &:hover {
       color: #fff;
       background-color: #e6a23c;
@@ -205,7 +212,7 @@
       color: #fff;
     }
   }
-  .imm-button--warning.is-plain {
+  .imm-button--danger.is-plain {
     color: #f56c6c;
     background: #fef0f0;
     border-color: #fbc4c4;
