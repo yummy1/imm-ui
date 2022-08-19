@@ -1,5 +1,5 @@
 <template>
-    <a v-bind="attrs" class="m-link" :class="styleClass">
+    <a v-bind="attrs" class="imm-link" :class="styleClass">
         <slot />
     </a>
 </template>
@@ -8,7 +8,7 @@ import './style/index.less'
 import { linkProps } from './types'
 import { defineComponent, useAttrs, computed } from 'vue'
 export default defineComponent({
-    name: 'm-link',
+    name: 'imm-link',
     props: linkProps,
     setup(props) {
         const attrs = useAttrs()

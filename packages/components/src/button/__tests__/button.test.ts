@@ -21,6 +21,6 @@ describe('test Button', () => {
                 type: 'primary'
             }
         })
-        expect(wrapper.classes()).toContain('m-button--primary')
+        expect(wrapper.classes()).toContain('imm-button--primary')
     })
 })
