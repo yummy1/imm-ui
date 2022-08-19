@@ -52,10 +52,10 @@
     </div>
     <div>
         <p>图标</p>
-        <div>
-            <div>
-                <Icon name="Edit" color="#f00"></Icon>
-                <span>Edit</span>
+        <div class="icon-table">
+            <div class="icon-cell" v-for="name in icons" :key="name">
+                <Icon :name="name" color="#f00" size="24px"></Icon>
+                <span>{{name}}</span>
             </div>
         </div>
     </div>
@@ -66,6 +66,7 @@
 </template>
 <script lang="ts" setup>
 import { Button, Link, Icon } from 'imm-ui'
+const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 </script>
 <style scope>
 .icon-table {
@@ -86,5 +87,7 @@ import { Button, Link, Icon } from 'imm-ui'
     border-right: 1px solid #dcdfe6;
     border-bottom: 1px solid #dcdfe6;
     transition: background-color .3s;
+    display: grid;
+    align-items: center;
 }
 </style>

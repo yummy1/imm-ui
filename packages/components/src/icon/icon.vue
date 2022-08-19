@@ -1,6 +1,6 @@
 <template>
     <div class="imm-icon">
-        <svg class="icon" :style="iconColor" aria-hidden="true">
+        <svg class="icon" :style="style" aria-hidden="true">
             <use :xlink:href="iconName"></use>
         </svg>
         <div v-if="dot" class="imm-info" :class="styleDot">{{ badge }}</div>
@@ -11,6 +11,9 @@
  import './style/index.less'
  import { defineComponent, computed, onMounted } from 'vue'
  import { iconProps } from './types'
+ import type { CSSProperties } from 'vue'
+ import { isUndefined, addUnit } from '@imm-ui/utils'
+
  export default defineComponent({
      props: iconProps,
      setup(props) {
@@ -29,16 +32,19 @@
              return props.badge
          })
  
-         const iconColor = computed(() => {
-             return {
-                 color: props.color
-             }
-         })
+         const style = computed<CSSProperties>(() => {
+            if (!props.size && !props.color) return {}
+
+            return {
+                fontSize: isUndefined(props.size) ? undefined : addUnit(props.size),
+                '--color': props.color,
+            }
+        })
          return {
              iconName,
              styleDot,
              badge,
-             iconColor
+             style
          };
      },
  });

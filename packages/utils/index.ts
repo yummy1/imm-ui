@@ -1,1 +1,5 @@
 export * from './install'
+export * from './props'
+export * from './error'
+export * from './types'
+export * from './style'
