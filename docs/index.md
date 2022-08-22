@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /guide/
+      link: /guide/installation
     - theme: alt
       text: 在 github 上查看
       link: https://github.com/yummy1/imm-ui

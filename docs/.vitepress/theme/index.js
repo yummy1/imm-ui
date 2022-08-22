@@ -1,6 +1,11 @@
 // .vitepress/theme/index.js
 
 import DefaultTheme from "vitepress/theme";
+// 导入主题样式
+import "vitepress-theme-demoblock/theme/styles/index.css"
+// 导入插件的主题
+import { registerComponents } from "./register-components.js"
+
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app, router, siteData, isServer }) => {
@@ -10,5 +15,12 @@ export default {
       app.use(module.Button);
       app.use(module.Icon);
     });
+    registerComponents(app);
   },
+  markdown: {
+    config: (md) => {
+    const { demoBlockPlugin } = require("vitepress-theme-demoblock")
+      md.use(demoBlockPlugin)
+    }
+  }
 };

@@ -2,7 +2,7 @@
 
 ## 环境支持
 
-由于 Vue 3 不再支持 IE11，Element Plus 也不再支持 IE11 浏览器。
+由于 Vue 3 不再支持 IE11，IMM-UI 也不再支持 IE11 浏览器。
 
 ## 版本
 

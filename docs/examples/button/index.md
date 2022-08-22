@@ -22,7 +22,7 @@
     }
 </style>
 
-# imm-button 按钮
+# Button 按钮
 
 ## 基础用法
 
@@ -53,7 +53,14 @@
         <imm-button type="info" round>信息按钮</imm-button>
         <imm-button type="warning" round>警告按钮</imm-button>
         <imm-button type="danger" round>危险按钮</imm-button>
-        <a>123</a>
+        <br>
+        <br>
+        <imm-button icon="Edit" circle></imm-button>
+        <imm-button type="primary" icon="User" circle></imm-button>
+        <imm-button type="success" icon="Delete" circle></imm-button>
+        <imm-button type="info" icon="Search" circle></imm-button>
+        <imm-button type="warning" icon="Home" circle></imm-button>
+        <imm-button type="danger" icon="Setting" circle></imm-button>
     </div>
 
 </div>
@@ -87,13 +94,60 @@
     <imm-button type="info" round>信息按钮</imm-button>
     <imm-button type="warning" round>警告按钮</imm-button>
     <imm-button type="danger" round>危险按钮</imm-button>
+    <br>
+    <br>
+    <imm-button icon="Edit" circle></imm-button>
+    <imm-button type="primary" icon="User" circle></imm-button>
+    <imm-button type="success" icon="Delete" circle></imm-button>
+    <imm-button type="info" icon="Search" circle></imm-button>
+    <imm-button type="warning" icon="Home" circle></imm-button>
+    <imm-button type="danger" icon="Setting" circle></imm-button>
   </div>
 </template>
 <script lang="ts" setup>
 import { imm-button } from "imm-ui";
 </script>
 <style>
-.m-imm-button {
+.imm-button {
+  margin-right: 10px;
+}
+</style>
+```
+
+</details>
+
+## 带图标的按钮
+
+<div class="example">
+    <div>
+        <imm-button icon="Edit">默认按钮</imm-button>
+        <imm-button type="primary" icon="Love">主要按钮</imm-button>
+        <imm-button type="success" icon="User">成功按钮</imm-button>
+        <imm-button type="info" icon="Home">信息按钮</imm-button>
+        <imm-button type="warning" icon="Setting">警告按钮</imm-button>
+        <imm-button type="danger" icon="Delete" iconPosition="right">危险按钮</imm-button>
+    </div>
+</div>
+
+<details>
+<summary>展开查看</summary>
+
+```vue
+<template>
+  <div>
+    <imm-button icon="Edit">默认按钮</imm-button>
+    <imm-button type="primary" icon="Love">主要按钮</imm-button>
+    <imm-button type="success" icon="User">成功按钮</imm-button>
+    <imm-button type="info" icon="Home">信息按钮</imm-button>
+    <imm-button type="warning" icon="Setting">警告按钮</imm-button>
+    <imm-button type="danger" icon="Delete" iconPosition="right">危险按钮</imm-button>
+  </div>
+</template>
+<script lang="ts" setup>
+import { imm-button } from "imm-ui";
+</script>
+<style>
+.imm-button {
   margin-right: 10px;
 }
 </style>
@@ -183,10 +237,21 @@ import { imm-button } from "kitty-ui";
 import { imm-button } from "imm-ui";
 </script>
 <style>
-.m-imm-button {
+.imm-button {
   margin-right: 10px;
 }
 </style>
 ```
 
 </details>
+
+## Button属性
+|    属性    | 说明                         | 类型         | 可选值                                       | 默认值 |
+| --------- | ------------------------------------ | ------------------ | ----------------------------------------------------- | ------- |
+| type      | 类型                                  | string             | primary / success / warning / danger / info / default | default |
+| size      | 尺寸                                  | string             | medium / small / mini                                 | medium  |
+| plain     | 是否为朴素按钮                          | boolean            | —                                                     | false   |
+| round     | 是否为圆角按钮                          | boolean            | —                                                     | false   |
+| circle    | 是否为圆形按钮                          | boolean            | —                                                     | false   |
+| icon      | 图标组件                               | string             | —                                                     | -       |
+| icon-position      | 图标位置                      | string             | left / right                                          | left    |

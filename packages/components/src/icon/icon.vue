@@ -15,6 +15,7 @@
  import { isUndefined, addUnit } from '@imm-ui/utils'
 
  export default defineComponent({
+    name: 'imm-icon',
      props: iconProps,
      setup(props) {
          onMounted(() => {

@@ -42,7 +42,11 @@ export default {
               },
               {
                 text: "Icon图标",
-                link: "/examples/Icon/",
+                link: "/examples/icon/",
+              },
+              {
+                text: "Link链接",
+                link: "/examples/link/",
               },
             ],
           },
