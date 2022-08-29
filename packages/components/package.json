@@ -16,6 +16,7 @@
     "imm-ui",
     "vue3组件库"
   ],
+  "author": "yummyMao",
   "license": "MIT",
   "typings": "lib/index.d.ts",
   "dependencies": {
