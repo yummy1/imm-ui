@@ -13,6 +13,9 @@
   "keywords": [],
   "author": "yummyMao",
   "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "axios": "^0.27.2",
     "vite": "^3.0.9"
