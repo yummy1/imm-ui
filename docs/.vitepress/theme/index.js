@@ -14,6 +14,7 @@ export default {
     import("imm-ui").then((module) => {
       app.use(module.Button);
       app.use(module.Icon);
+      app.use(module.Link);
     });
     registerComponents(app);
   },

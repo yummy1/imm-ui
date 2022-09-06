@@ -55,7 +55,7 @@ importers:
       vitepress: 1.0.0-alpha.8
       vitepress-theme-demoblock: ^1.4.2
     dependencies:
-      imm-ui: link:../packages/components/copypackage
+      imm-ui: link:../packages/components
     devDependencies:
       vitepress: 1.0.0-alpha.8
       vitepress-theme-demoblock: 1.4.2

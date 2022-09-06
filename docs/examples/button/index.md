@@ -199,10 +199,10 @@ import { imm-button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-button } from "kitty-ui";
+import { imm-button } from "imm-ui";
 </script>
 <style>
-.m-imm-button {
+.imm-button {
   margin-right: 10px;
 }
 </style>
