@@ -1,7 +1,6 @@
 {
   "name": "imm-ui",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "files": [
@@ -12,7 +11,11 @@
     "imm-ui",
     "vue3组件库"
   ],
+  "dependencies": {
+    "@kitty-ui/utils": "1.0.0"
+  },
   "author": "yummyMao",
   "license": "MIT",
+  "description": "",
   "typings": "lib/index.d.ts"
 }

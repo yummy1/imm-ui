@@ -14,7 +14,7 @@ export default defineComponent({
         const attrs = useAttrs()
         const styleClass = computed(() => {
             return {
-                [`m-linm--${props.type}`]: props.type,
+                [`imm-link--${props.type}`]: props.type,
                 'is-disabled': props.disabled,
                 'is-underline': props.underline,
             }

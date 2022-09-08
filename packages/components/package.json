@@ -1,7 +1,6 @@
 {
-  "name": "imm-ui",
+  "name": "kitty-ui",
   "version": "1.0.0",
-  "description": "",
   "main": "index.ts",
   "scripts": {
     "build": "vite build",
@@ -18,8 +17,9 @@
   ],
   "author": "yummyMao",
   "license": "MIT",
+  "description": "",
   "typings": "lib/index.d.ts",
   "dependencies": {
-    "@imm-ui/utils": "workspace:^1.0.0"
+    "@imm-ui/utils": "workspace:1.0.0"
   }
 }

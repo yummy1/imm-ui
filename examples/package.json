@@ -13,6 +13,7 @@
     "sass": "^1.54.4"
   },
   "dependencies": {
-    "@imm-ui/tracking": "workspace:^1.0.0"
+    "@imm-ui/tracking": "workspace:^1.0.0",
+    "imm-ui": "workspace:^1.0.0"
   }
 }

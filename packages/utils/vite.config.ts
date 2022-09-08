@@ -11,7 +11,7 @@ export default defineConfig(
             //打包文件目录
             outDir: "es",
             //压缩
-            minify: false,
+            minify: true,
             rollupOptions: {
                 input: ['./index.ts'],
                 output: [
@@ -23,7 +23,6 @@ export default defineConfig(
                         preserveModules: true,
                         //配置打包根目录
                         dir: resolve(__dirname, './dist/es'),
-                        preserveModulesRoot: 'src'
                     },
                     {
                         format: 'cjs',
@@ -32,26 +31,19 @@ export default defineConfig(
                         preserveModules: true,
                         //配置打包根目录
                         dir: resolve(__dirname, './dist/lib'),
-                        preserveModulesRoot: 'src'
                     }
                 ]
             },
             lib: {
                 entry: './index.ts',
-                formats: ['es', 'cjs'],
-                name: 'imm'
+                name: 'immutils'
             }
         },
         plugins: [
             vue(),
             dts({
-                outputDir: resolve(__dirname, './dist/es'),
+                outputDir: [resolve(__dirname, './dist/es'), resolve(__dirname, './dist/lib')],
                 //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
-                tsConfigFilePath: '../../tsconfig.json'
-            }),
-            //因为这个插件默认打包到es下，我们想让lib目录下也生成声明文件需要再配置一个
-            dts({
-                outputDir: resolve(__dirname, './dist/lib'),
                 tsConfigFilePath: '../../tsconfig.json'
             })
         ]

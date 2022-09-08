@@ -6,7 +6,7 @@ export default async (command: string, path: string) => {
         const app = spawn(cmd, args, {
             cwd: path,//执行命令的路径
             stdio: 'inherit', //输出共享给父进程
-            shell: false //mac不需要开启，windows下git base需要开启支持
+            shell: true //mac不需要开启，windows下git base需要开启支持
         })
         //执行完毕关闭并resolve
         app.on('close', resolve)
