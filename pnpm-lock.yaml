@@ -55,7 +55,7 @@ importers:
       vitepress: 1.0.0-alpha.8
       vitepress-theme-demoblock: ^1.4.2
     dependencies:
-      imm-ui: link:../packages/components/transitpkg
+      imm-ui: link:../packages/components
     devDependencies:
       vitepress: 1.0.0-alpha.8_hoyvfk3ab7nzsjkhptt6ai7rzq
       vitepress-theme-demoblock: 1.4.2_wcqkhtmu7mswc6yz4uyexck3ty
@@ -67,7 +67,7 @@ importers:
       sass: ^1.54.4
     dependencies:
       '@imm-ui/tracking': link:../packages/v-tracking
-      imm-ui: link:../packages/components/transitpkg
+      imm-ui: link:../packages/components
     devDependencies:
       sass: 1.54.9
 
@@ -79,9 +79,9 @@ importers:
 
   packages/components/transitpkg:
     specifiers:
-      '@kitty-ui/utils': 1.0.0
+      '@imm-ui/utils': 1.0.0
     dependencies:
-      '@kitty-ui/utils': 1.0.0
+      '@imm-ui/utils': link:../../utils
 
   packages/utils:
     specifiers: {}
@@ -356,10 +356,6 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
-
-  /@kitty-ui/utils/1.0.0:
-    resolution: {integrity: sha512-tSVoQxf4AF+xK94sNFGI487Rhh21yK4YQodRFVYzIsO22wDwwEf4fsZ7YQs1qtB8jeD5vJWhQvDpG1FQ+Xmz0A==}
-    dev: false
 
   /@microsoft/api-extractor-model/7.24.0:
     resolution: {integrity: sha512-lFzF5h+quTyVB7eaKJkqrbQRDGSkrHzXyF8iMVvHdlaNrodGeyhtQeBFDuRVvBXTW2ILBiOV6ZWwUM1eGKcD+A==}

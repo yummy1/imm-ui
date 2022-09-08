@@ -12,7 +12,7 @@
     "vue3组件库"
   ],
   "dependencies": {
-    "@kitty-ui/utils": "1.0.0"
+    "@imm-ui/utils": "1.0.0"
   },
   "author": "yummyMao",
   "license": "MIT",

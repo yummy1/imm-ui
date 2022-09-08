@@ -380,10 +380,10 @@ const styleClass = computed(() => {
     </div>
 </template>
 <script lang="ts" setup>
-import { Button } from 'kitty-ui'
+import { Button } from 'imm-ui'
 </script>
 <style lang="less">
-.k-button {
+.imm-button {
     margin-right: 10px;
 }
 </style>
