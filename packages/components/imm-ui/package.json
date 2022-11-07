@@ -7,6 +7,9 @@
     "es",
     "lib"
   ],
+  "scripts": {
+    "release": "release-it"
+  },
   "keywords": [
     "imm-ui",
     "vue3组件库"

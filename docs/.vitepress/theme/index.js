@@ -5,17 +5,13 @@ import DefaultTheme from "vitepress/theme";
 import "vitepress-theme-demoblock/theme/styles/index.css"
 // 导入插件的主题
 import { registerComponents } from "./register-components.js"
+import imm from 'imm-ui'
 
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app, router, siteData, isServer }) => {
-    // app is the Vue 3 app instance from `createApp()`. router is VitePress'
-    // custom router. `siteData`` is a `ref`` of current site-level metadata.
-    import("imm-ui").then((module) => {
-      app.use(module.Button);
-      app.use(module.Icon);
-      app.use(module.Link);
-    });
+    app.use(imm)
+
     registerComponents(app);
   },
   markdown: {

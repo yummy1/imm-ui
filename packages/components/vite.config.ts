@@ -24,9 +24,9 @@ export default defineConfig(
                         entryFileNames: '[name].js',
                         //让打包目录和我们目录对应
                         preserveModules: true,
+                        exports: 'named',
                         //配置打包根目录
-                        dir: resolve(__dirname, './dist/es'),
-                        preserveModulesRoot: resolve(__dirname, 'src')
+                        dir: resolve(__dirname, './imm-ui/es'),
                     },
                     {
                         format: 'cjs',
@@ -34,9 +34,9 @@ export default defineConfig(
                         entryFileNames: '[name].js',
                         //让打包目录和我们目录对应
                         preserveModules: true,
+                        exports: 'named',
                         //配置打包根目录
-                        dir: resolve(__dirname, './dist/lib'),
-                        preserveModulesRoot: resolve(__dirname, 'src')
+                        dir: resolve(__dirname, './imm-ui/lib'),
                     }
                 ]
             },
@@ -50,7 +50,7 @@ export default defineConfig(
             vue(),
             dts({
                 entryRoot: 'src',
-                outputDir: [resolve(__dirname, './dist/es/src'), resolve(__dirname, './dist/lib/src')],
+                outputDir: [resolve(__dirname, './imm-ui/es/src'), resolve(__dirname, './imm-ui/lib/src')],
                 //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json
                 tsConfigFilePath: '../../tsconfig.json'
             }),

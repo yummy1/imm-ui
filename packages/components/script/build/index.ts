@@ -2,11 +2,12 @@ import { src, dest } from 'gulp'
 import { componentPath } from '../utils/paths'
 import less from "gulp-less"
 import autoprefixer from 'gulp-autoprefixer'
+import delpath from "../utils/delpath"
 import run from "../utils/run"
 
 //删除dist
 export const removeDist = () => {
-    return run(`rm -rf ${componentPath}/dist`, componentPath)
+    return delpath(`${componentPath}/imm-ui`)
 }
 
 //处理样式
@@ -16,8 +17,8 @@ export const buildStyle = () => {
         .pipe(
             autoprefixer()
         )
-        .pipe(dest(`${componentPath}/dist/lib/src`))
-        .pipe(dest(`${componentPath}/dist/es/src`));
+        .pipe(dest(`${componentPath}/imm-ui/lib/src`))
+        .pipe(dest(`${componentPath}/imm-ui/es/src`));
 };
 
 //打包组件
