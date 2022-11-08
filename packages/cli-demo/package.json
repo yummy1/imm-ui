@@ -1,0 +1,14 @@
+{
+  "name": "cli-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "create-imm": "create-imm"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "create-imm": "workspace:^1.0.0"
+  }
+}

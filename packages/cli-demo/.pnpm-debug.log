@@ -1,0 +1,15 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/mac/Desktop/imm-ui"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_REGISTRIES_MISMATCH",
+    "err": {
+      "name": "Error",
+      "message": "This modules directory was created using the following registries configuration: {\"default\":\"https://registry.npmmirror.com/\"}. The current configuration is {\"default\":\"https://registry.npmjs.org/\"}. To recreate the modules directory using the new settings, run \"pnpm install\".",
+      "code": "ERR_PNPM_REGISTRIES_MISMATCH",
+      "stack": "Error: This modules directory was created using the following registries configuration: {\"default\":\"https://registry.npmmirror.com/\"}. The current configuration is {\"default\":\"https://registry.npmjs.org/\"}. To recreate the modules directory using the new settings, run \"pnpm install\".\n    at validateModules (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:90784:15)\n    at async Object.getContext [as default] (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:90656:28)\n    at async Object.mutateModules (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:113215:19)\n    at async Object.recursive [as default] (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:115774:29)\n    at async Object.handler [as default] (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:116071:11)\n    at async /Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125614:20\n    at async run (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125589:34)\n    at async runPnpm (/Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125799:5)\n    at async /Users/mac/.node/corepack/pnpm/6.11.0/dist/pnpm.cjs:125791:7"
+    }
+  }
+}
