@@ -10,6 +10,10 @@
   "scripts": {
     "release": "release-it"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://e.coding.net/yummy1/cicd/imm-ui.git"
+  },
   "keywords": [
     "imm-ui",
     "vue3组件库"
