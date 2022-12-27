@@ -1,5 +1,12 @@
 
 
+## [1.2.0](https://e.coding.net/yummy1/cicd/imm-ui/compare/1.1.0...1.2.0) (2022-12-27)
+
+
+### Features
+
+* 修复打包错误问题 ([60afd40](https://e.coding.net/yummy1/cicd/imm-ui/commit/60afd40cdd7629c7a2e027ff029eaba155b10779))
+
 ## 1.1.0 (2022-12-26)
 
 

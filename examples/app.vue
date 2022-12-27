@@ -2,7 +2,7 @@
     <div>
         <p>按钮</p>
         <div>
-            <Button v-click="{ eventName: 'test1' }">默认按钮</Button>
+<!--            <Button v-click="{ eventName: 'test1' }">默认按钮</Button>-->
             <Button type="primary">主要按钮</Button>
             <Button type="success">成功按钮</Button>
             <Button type="info">信息按钮</Button>
@@ -66,7 +66,7 @@
 </template>
 <script lang="ts" setup>
 import { Button, Link, Icon } from 'imm-ui'
-import { getCurrentInstance } from 'vue';
+// import { getCurrentInstance } from 'vue';
 const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 // const { proxy } = getCurrentInstance()
 // proxy.$vtrack({ eventName: 'test1' })
