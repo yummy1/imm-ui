@@ -13,10 +13,11 @@
   "author": "yummyMao",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "1.0.0-alpha.8",
+    "vitepress": "^1.0.0-alpha.33",
     "vitepress-theme-demoblock": "^1.4.2"
   },
   "dependencies": {
+    "@imm-ui/utils": "workspace:^1.0.0",
     "imm-ui": "workspace:^1.0.0"
   }
 }

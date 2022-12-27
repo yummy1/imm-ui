@@ -1,7 +1,7 @@
 import {createApp} from 'vue'
 import App from './app.vue'
 const app = createApp(App)
-import immui from "imm-ui"
+import immui from 'imm-ui'
 // import vTracking from '@imm-ui/tracking'
 // app.use(vTracking, {
 //     baseParams: {

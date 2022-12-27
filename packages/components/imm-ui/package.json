@@ -2,7 +2,7 @@
   "name": "imm-ui",
   "version": "1.1.0",
   "main": "lib/index.js",
-  "module": "es/index.js",
+  "module": "es/index.mjs",
   "files": [
     "es",
     "lib"
@@ -19,7 +19,7 @@
     "vue3组件库"
   ],
   "dependencies": {
-    "@imm-ui/utils": "1.0.0"
+    "@imm-ui/utils": "workspace:^1.0.0"
   },
   "author": "yummyMao",
   "license": "MIT",

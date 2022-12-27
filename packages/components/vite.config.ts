@@ -13,6 +13,7 @@ export default defineConfig(
             minify: true,
             //css分离
             //cssCodeSplit: true,
+            emptyOutDir: false,
             rollupOptions: {
                 //忽略打包vue文件
                 external: ['vue', /\.less/, '@imm-ui/utils'],
@@ -21,7 +22,7 @@ export default defineConfig(
                     {
                         format: 'es',
                         //不用打包成.es.js,这里我们想把它打包成.js
-                        entryFileNames: '[name].js',
+                        entryFileNames: '[name].mjs',
                         //让打包目录和我们目录对应
                         preserveModules: true,
                         exports: 'named',
@@ -42,7 +43,7 @@ export default defineConfig(
             },
             lib: {
                 entry: './index.ts',
-                name: 'imm',
+                name: 'imm-ui',
             }
         },
 
