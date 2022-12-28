@@ -1,31 +1,50 @@
-name: imm-ui-pages
+name: Fighting Design Github Actions
+
+# 当 master 分支 push 代码的时候触发 workflow
 on:
   push:
     branches:
       - master
-jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [ 14.x, 16.x ]
-    steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@master
 
-      - name: Use Node.js ${{ matrix.node-version }}
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 下载仓库代码 / 校验
+      - name: Checkout
+        # actions/checkout@v3 是 github 官方的一个action，用于 clone 该仓库的源码到工作流中
+        uses: actions/checkout@v3
+
+      # 安装 pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6
+
+      # 安装 node
+      - name: Setup node
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '16.x'
+          cache: 'pnpm'
 
-      - name: Install and Build 🔧
-        run: |
-          pnpm install
-          pnpm run docs:build
+      # 安装依赖项
+      - name: Install
+        run: pnpm i
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+      # 打包组件
+      - name: Build Docs
+        run: pnpm run docs:build
+
+      # 向 Codecov 报告覆盖率
+      - name: Report coverage to Codecov
+        uses: codecov/codecov-action@v1
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: docs/.vitepress/dist
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: docs/.vitepress/dist
