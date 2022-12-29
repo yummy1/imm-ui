@@ -32,9 +32,9 @@ jobs:
       # 发布pages
       - name: Build And Publish Docs
         run: |
-          pnpm i
+          pnpm install
           pnpm run docs:build
-          cd .vitepress/dist
+          cd docs/.vitepress/dist
           touch .nojekyll
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
@@ -42,9 +42,3 @@ jobs:
           git add -A
           git commit -m autobuild
           git push -f https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git master:gh-pages
-
-      # 向 Codecov 报告覆盖率
-      - name: Report coverage to Codecov
-        uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
