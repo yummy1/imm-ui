@@ -13,7 +13,9 @@ export const linkProps = {
         }
     },
     disabled: Boolean,
-    underline: Boolean
+    underline: {
+        type: Boolean,
+    }
 }
 
 export type LinkProps = ExtractPropTypes<typeof linkProps>

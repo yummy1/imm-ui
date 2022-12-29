@@ -61,7 +61,24 @@
     </div>
     <div>
         <p>链接</p>
-        <Link type="primary" underline>主要链接</Link>
+      <imm-link>默认链接</imm-link>
+      <imm-link type="primary">主要链接</imm-link>
+      <imm-link type="success">成功链接</imm-link>
+      <imm-link type="info">信息链接</imm-link>
+      <imm-link type="warning">警告链接</imm-link>
+      <imm-link type="danger">危险链接</imm-link>
+      <imm-link type="text">文字链接</imm-link>
+
+      <imm-link type="primary" disabled>默认链接</imm-link>
+      <imm-link type="primary" disabled>主要链接</imm-link>
+      <imm-link type="success" disabled>成功链接</imm-link>
+      <imm-link type="info" disabled>信息链接</imm-link>
+      <imm-link type="warning" disabled>警告链接</imm-link>
+      <imm-link type="danger" disabled>危险链接</imm-link>
+      <imm-link type="text" disabled>文字链接</imm-link>
+
+      <imm-link type="primary">无下划线链接</imm-link>
+      <imm-link type="primary" underline>有下划线链接</imm-link>
     </div>
 </template>
 <script lang="ts" setup>
@@ -92,5 +109,8 @@ const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', '
     transition: background-color .3s;
     display: grid;
     align-items: center;
+}
+.imm-link {
+  margin-right: 10px;
 }
 </style>

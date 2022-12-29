@@ -30,7 +30,6 @@ import {
   isKnownSvgAttr,
   isMap,
   isModelListener,
-  isNoUnitNumericStyleProp,
   isObject,
   isOn,
   isPlainObject,
@@ -60,7 +59,7 @@ import {
   toNumber,
   toRawType,
   toTypeString
-} from "./chunk-I3FJB4GN.js";
+} from "./chunk-GU67SQGX.js";
 export {
   EMPTY_ARR,
   EMPTY_OBJ,
@@ -93,7 +92,6 @@ export {
   isKnownSvgAttr,
   isMap,
   isModelListener,
-  isNoUnitNumericStyleProp,
   isObject,
   isOn,
   isPlainObject,
