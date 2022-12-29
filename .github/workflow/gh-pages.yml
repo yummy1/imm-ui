@@ -29,16 +29,16 @@ jobs:
           node-version: '16.x'
           cache: 'pnpm'
 
+      - name: Install SSH Client
+          uses: webfactory/ssh-agent@v0.2.0 # This step installs the ssh client into the workflow run. There's many options available for this on the action marketplace.
+          with:
+            ssh-private-key: ${{ secrets.IMMUI }}
       # 发布pages
-      - name: Build And Publish Docs
-        run: |
-          pnpm install
-          pnpm run docs:build
-          cd docs/.vitepress/dist
-          touch .nojekyll
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "github-actions[bot]"
-          git init
-          git add -A
-          git commit -m autobuild
-          git push -f https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git master:gh-pages
+      - name: Build and Deploy Repo
+        uses: JamesIves/github-pages-deploy-action@releases/v3-test
+        with:
+          BASE_BRANCH: master
+          BRANCH: gh-pages
+          FOLDER: docs/.vuepress/dist
+          SSH: true # SSH must be set to true so the deploy action knows which protocol to deploy with.
+

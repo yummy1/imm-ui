@@ -1,4 +1,5 @@
 export default {
+    base: '/imm-ui/',
     themeConfig: {
       siteTitle: false,
       logo: "/logo.png",
@@ -54,4 +55,3 @@ export default {
       },
     },
 };
-  
