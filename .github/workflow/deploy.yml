@@ -1,4 +1,4 @@
-name: Fighting Design Github Actions
+name: Publish docs to github actions
 
 # 当 master 分支 push 代码的时候触发 workflow
 on:
@@ -16,18 +16,21 @@ jobs:
         # actions/checkout@v3 是 github 官方的一个action，用于 clone 该仓库的源码到工作流中
         uses: actions/checkout@v3
 
-      # 安装 pnpm
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: 6
-
       # 安装 node
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: '16.x'
           cache: 'pnpm'
+
+      # 安装 pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 6
+
+      - name: Install
+          run: pnpm install
 
       - name: Install SSH Client
           uses: webfactory/ssh-agent@v0.2.0 # This step installs the ssh client into the workflow run. There's many options available for this on the action marketplace.
