@@ -93,9 +93,12 @@ importers:
 
   packages/components/imm-ui:
     specifiers:
-      '@imm-ui/utils': workspace:^1.0.0
+      '@imm-ui/utils': 1.0.0
+      release-it: ^15.5.0
     dependencies:
       '@imm-ui/utils': link:../../utils
+    devDependencies:
+      release-it: 15.6.0
 
   packages/create-imm:
     specifiers:

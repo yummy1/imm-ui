@@ -40,7 +40,7 @@ export default defineConfig(
             }
         },
         plugins: [
-            vue(),
+            // vue(),
             dts({
                 outputDir: [resolve(__dirname, './dist/es'), resolve(__dirname, './dist/lib')],
                 //指定使用的tsconfig.json为我们整个项目根目录下掉,如果不配置,你也可以在components下新建tsconfig.json

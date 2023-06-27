@@ -28,7 +28,7 @@ export default defineComponent({
 <script setup lang="ts">
 import './style/index.less'
 import { ref } from 'vue'
-import Icon from '../Icon/icon.vue'
+import Icon from '../icon/icon.vue'
 import { uoloadType } from './types'
 import Drager from './dragger.vue'
 const props = defineProps(uoloadType)
