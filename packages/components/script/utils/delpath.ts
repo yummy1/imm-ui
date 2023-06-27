@@ -1,5 +1,6 @@
 import fs from 'fs'
 import { componentPath } from './paths'
+import {resolve} from "path";
 const stayFile = ['package.json', 'README.md']
 
 const delPath = async (path: string) => {
@@ -12,25 +13,22 @@ const delPath = async (path: string) => {
 
         files.forEach(async (file) => {
 
-            let curPath = path + "/" + file;
+            let curPath = resolve(path, file);
 
             if (fs.statSync(curPath).isDirectory()) { // recurse
 
-                await delPath(curPath);
+                if (file != 'node_modules') await delPath(curPath)
 
             } else { // delete file
+
                 if (!stayFile.includes(file)) {
+
                     fs.unlinkSync(curPath);
+
                 }
-
-
             }
-
         });
-
         if (path != `${componentPath}/imm-ui`) fs.rmdirSync(path);
-
-
     }
 
 };
