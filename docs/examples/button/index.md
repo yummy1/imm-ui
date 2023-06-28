@@ -105,7 +105,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-button } from "imm-ui";
+import { Button } from "imm-ui";
 </script>
 <style>
 .imm-button {
@@ -144,7 +144,7 @@ import { imm-button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-button } from "imm-ui";
+import { Button } from "imm-ui";
 </script>
 <style>
 .imm-button {

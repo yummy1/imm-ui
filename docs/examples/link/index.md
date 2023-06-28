@@ -14,11 +14,51 @@
         cursor: pointer;
         color: #1989fa;
     }
-    a {
-      all: initial
+/*因vitepress样式覆盖*/
+    .imm-link--primary {
+        color: #409eff !important;
     }
-    a:hover {
-      all: initial
+    .imm-link--primary:hover {
+        color: #66b1ff !important;
+    }
+    .imm-link--primary.is-disabled {
+      color: #a0cfff !important;
+    }
+    .imm-link--success {
+        color: #67c23a !important;
+    }
+    .imm-link--success:hover {
+        color: #85ce61 !important;
+    }
+    .imm-link--success.is-disabled {
+      color: #b3e19d !important;
+    }
+    .imm-link--info {
+        color: #909399 !important;
+    }
+    .imm-link--info:hover {
+        color: #a6a9ad !important;
+    }
+    .imm-link--info.is-disabled {
+      color: #c8c9cc !important;
+    }
+    .imm-link--warning {
+        color: #e6a23c !important;
+    }
+    .imm-link--warning:hover {
+        color: #ebb563 !important;
+    }
+    .imm-link--warning.is-disabled {
+      color: #f3d19e !important;
+    }
+    .imm-link--danger {
+        color: #f56c6c !important;
+    }
+    .imm-link--danger:hover {
+        color: #f78989 !important;
+    }
+    .imm-link--danger.is-disabled {
+      color: #fab6b6 !important;
     }
 </style>
 
@@ -34,7 +74,6 @@
         <imm-link type="info">信息链接</imm-link>
         <imm-link type="warning">警告链接</imm-link>
         <imm-link type="danger">危险链接</imm-link>
-        <imm-link type="text">文字链接</imm-link>
     </div>
 
 </div>
@@ -51,11 +90,10 @@
     <imm-link type="info">信息链接</imm-link>
     <imm-link type="warning">警告链接</imm-link>
     <imm-link type="danger">危险链接</imm-link>
-    <imm-link type="text">文字链接</imm-link>
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-link } from "imm-ui";
+import { Link } from "imm-ui";
 </script>
 <style>
 .imm-link {
@@ -76,7 +114,6 @@ import { imm-link } from "imm-ui";
         <imm-link type="info" disabled>信息链接</imm-link>
         <imm-link type="warning" disabled>警告链接</imm-link>
         <imm-link type="danger" disabled>危险链接</imm-link>
-        <imm-link type="text" disabled>文字链接</imm-link>
     </div>
 </div>
 
@@ -92,11 +129,10 @@ import { imm-link } from "imm-ui";
     <imm-link type="info" disabled>信息链接</imm-link>
     <imm-link type="warning" disabled>警告链接</imm-link>
     <imm-link type="danger" disabled>危险链接</imm-link>
-    <imm-link type="text" disabled>文字链接</imm-link>
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-link } from "imm-ui";
+import { Link } from "imm-ui";
 </script>
 <style>
 .imm-link {
@@ -127,7 +163,7 @@ import { imm-link } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-link } from "imm-ui";
+import { Link } from "imm-ui";
 </script>
 <style>
 .imm-link {

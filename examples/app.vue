@@ -61,28 +61,26 @@
     </div>
     <div>
         <p>链接</p>
-      <imm-link>默认链接</imm-link>
-      <imm-link type="primary">主要链接</imm-link>
-      <imm-link type="success">成功链接</imm-link>
-      <imm-link type="info">信息链接</imm-link>
-      <imm-link type="warning">警告链接</imm-link>
-      <imm-link type="danger">危险链接</imm-link>
-      <imm-link type="text">文字链接</imm-link>
+      <Link>默认链接</Link>
+      <Link type="primary">主要链接</Link>
+      <Link type="success">成功链接</Link>
+      <Link type="info">信息链接</Link>
+      <Link type="warning">警告链接</Link>
+      <Link type="danger">危险链接</Link>
 
-      <imm-link type="primary" disabled>默认链接</imm-link>
-      <imm-link type="primary" disabled>主要链接</imm-link>
-      <imm-link type="success" disabled>成功链接</imm-link>
-      <imm-link type="info" disabled>信息链接</imm-link>
-      <imm-link type="warning" disabled>警告链接</imm-link>
-      <imm-link type="danger" disabled>危险链接</imm-link>
-      <imm-link type="text" disabled>文字链接</imm-link>
+      <Link type="primary" disabled>默认链接</Link>
+      <Link type="primary" disabled>主要链接</Link>
+      <Link type="success" disabled>成功链接</Link>
+      <Link type="info" disabled>信息链接</Link>
+      <Link type="warning" disabled>警告链接</Link>
+      <Link type="danger" disabled>危险链接</Link>
 
-      <imm-link type="primary">无下划线链接</imm-link>
-      <imm-link type="primary" underline>有下划线链接</imm-link>
+      <Link type="primary">无下划线链接</Link>
+      <Link type="primary" underline>有下划线链接</Link>
     </div>
 </template>
 <script lang="ts" setup>
-import { Button, Link, Icon } from 'imm-ui'
+import { Button, Icon, Link } from 'imm-ui'
 // import { getCurrentInstance } from 'vue';
 const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 // const { proxy } = getCurrentInstance()

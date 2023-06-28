@@ -65,7 +65,7 @@
 </div>
 </template>
 <script lang="ts" setup>
-import { imm-icon } from "imm-ui";
+import { Icon } from "imm-ui";
 const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 </script>
 ```
@@ -99,7 +99,7 @@ const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', '
 </div>
 </template>
 <script lang="ts" setup>
-import { imm-icon } from "imm-ui";
+import { Icon } from "imm-ui";
 </script>
 ```
 </details>

@@ -2,6 +2,7 @@ export default {
     themeConfig: {
       siteTitle: false,
       logo: "/logo.png",
+      base: process.env.NODE_ENV === 'production' ? '/imm-ui/' : '/',
       nav: [
         { text: "指南", link: "/guide/installation" },
         { text: "组件", link: "/examples/button/" },
