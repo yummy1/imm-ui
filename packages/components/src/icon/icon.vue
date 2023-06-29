@@ -7,8 +7,8 @@
     </div>
 </template>
  <script lang="ts">
- 
- import './style/index.less'
+
+ // import './style/index.less'
  import { defineComponent, computed, onMounted } from 'vue'
  import { iconProps } from './types'
  import type { CSSProperties } from 'vue'
@@ -32,7 +32,7 @@
          const badge = computed(() => {
              return props.badge
          })
- 
+
          const style = computed<CSSProperties>(() => {
             if (!props.size && !props.color) return {}
 

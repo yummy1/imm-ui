@@ -1,0 +1,90 @@
+.imm-link {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+.imm-link.is-underline:hover:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 0;
+  bottom: 0;
+}
+.imm-link.is-disabled {
+  cursor: not-allowed;
+}
+//主要
+.imm-link--primary.is-underline:hover:after {
+  border-bottom: 1px solid #409eff;
+}
+.imm-link--primary {
+  color: #409eff;
+}
+.imm-link--primary:hover {
+  color: #66b1ff;
+}
+.imm-link--primary.is-disabled {
+  color: #a0cfff;
+}
+//成功
+.imm-link--success.is-underline:hover:after {
+  border-bottom: 1px solid #67c23a;
+}
+.imm-link--success {
+  color: #67c23a;
+}
+.imm-link--success:hover {
+  color: #85ce61;
+}
+.imm-link--success.is-disabled {
+  color: #b3e19d;
+}
+//信息
+.imm-link--info.is-underline:hover:after {
+  border-bottom: 1px solid #909399;
+}
+.imm-link--info {
+  color: #909399;
+}
+.imm-link--info:hover {
+  color: #a6a9ad;
+}
+.imm-link--info.is-disabled {
+  color: #c8c9cc;
+}
+//警告
+.imm-link--warning.is-underline:hover:after {
+  border-bottom: 1px solid #e6a23c;
+}
+.imm-link--warning {
+  color: #e6a23c;
+}
+.imm-link--warning:hover {
+  color: #ebb563;
+}
+.imm-link--warning.is-disabled {
+  color: #f3d19e;
+}
+//危险
+.imm-link--danger.is-underline:hover:after {
+  border-bottom: 1px solid #f56c6c;
+}
+.imm-link--danger {
+  color: #f56c6c;
+}
+.imm-link--danger:hover {
+  color: #f78989;
+}
+.imm-link--danger.is-disabled {
+  color: #fab6b6;
+}

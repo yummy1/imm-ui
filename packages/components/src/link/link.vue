@@ -4,7 +4,7 @@
     </a>
 </template>
 <script lang="ts">
-import './style/index.less'
+// import './style/index.less'
 import { linkProps } from './types'
 import { defineComponent, useAttrs, computed } from 'vue'
 export default defineComponent({

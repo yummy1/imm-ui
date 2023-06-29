@@ -1,9 +1,10 @@
 import { src, dest } from 'gulp'
 import { componentPath } from '../utils/paths'
-import less from "gulp-less"
+const sass = require('gulp-sass')(require('sass'));
 import autoprefixer from 'gulp-autoprefixer'
 import delpath from "../utils/delpath"
 import run from "../utils/run"
+const cssmin = require('gulp-cssmin');
 
 //删除dist
 export const removeDist = () => {
@@ -12,13 +13,14 @@ export const removeDist = () => {
 
 //处理样式
 export const buildStyle = () => {
-    return src(`${componentPath}/src/**/style/**.less`)
-        .pipe(less())
+    return src(`${componentPath}/src/theme-chalk/**/*.scss`)
+        .pipe(sass())
         .pipe(
             autoprefixer()
         )
-        .pipe(dest(`${componentPath}/imm-ui/lib/src`))
-        .pipe(dest(`${componentPath}/imm-ui/es/src`));
+        .pipe(cssmin())
+        .pipe(dest(`${componentPath}/imm-ui/lib/src/theme-chalk`))
+        .pipe(dest(`${componentPath}/imm-ui/es/src/theme-chalk`));
 };
 
 //打包组件

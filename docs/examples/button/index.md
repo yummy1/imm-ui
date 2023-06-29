@@ -105,7 +105,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { Button } from "imm-ui";
+import "imm-ui/lib/src/theme-chalk/index.css"
 </script>
 <style>
 .imm-button {
@@ -199,7 +199,7 @@ import { Button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-button } from "imm-ui";
+import { Button } from "imm-ui";
 </script>
 <style>
 .imm-button {
@@ -234,7 +234,7 @@ import { imm-button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { imm-button } from "imm-ui";
+import { Button } from "imm-ui";
 </script>
 <style>
 .imm-button {

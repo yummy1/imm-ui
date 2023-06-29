@@ -12,11 +12,11 @@ export default defineConfig(
             //压缩
             minify: true,
             //css分离
-            //cssCodeSplit: true,
+            // cssCodeSplit: true,
             emptyOutDir: false,
             rollupOptions: {
                 //忽略打包vue文件
-                external: ['vue', /\.less/, '@imm-ui/utils'],
+                external: ['vue', /\.scss/, '@imm-ui/utils'], // /\.less/
                 input: ['index.ts'],
                 output: [
                     {
@@ -46,6 +46,15 @@ export default defineConfig(
                 name: 'imm-ui',
             }
         },
+
+        // css: {
+        //     preprocessorOptions: {
+        //         less: {
+        //             charset: false,
+        //             additionalData: '@import "./src/theme-chalk/common/index.less";'
+        //         }
+        //     }
+        // },
 
         plugins: [
             vue(),

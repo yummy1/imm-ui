@@ -3,84 +3,84 @@
         <p>按钮</p>
         <div>
 <!--            <Button v-click="{ eventName: 'test1' }">默认按钮</Button>-->
-            <Button type="primary">主要按钮</Button>
-            <Button type="success">成功按钮</Button>
-            <Button type="info">信息按钮</Button>
-            <Button type="warning">警告按钮</Button>
-            <Button type="danger">危险按钮</Button>
+            <imm-button type="primary">主要按钮</imm-button>
+            <imm-button type="success">成功按钮</imm-button>
+            <imm-button type="info">信息按钮</imm-button>
+            <imm-button type="warning">警告按钮</imm-button>
+            <imm-button type="danger">危险按钮</imm-button>
         </div>
         <div>
-            <Button size="medium">默认按钮</Button>
-            <Button type="primary" size="small">主要按钮</Button>
-            <Button type="success" size="mini">成功按钮</Button>
-            <Button type="info">信息按钮</Button>
-            <Button type="warning">警告按钮</Button>
-            <Button type="danger">危险按钮</Button>
+            <imm-button size="medium">默认按钮</imm-button>
+            <imm-button type="primary" size="small">主要按钮</imm-button>
+            <imm-button type="success" size="mini">成功按钮</imm-button>
+            <imm-button type="info">信息按钮</imm-button>
+            <imm-button type="warning">警告按钮</imm-button>
+            <imm-button type="danger">危险按钮</imm-button>
         </div>
         <div>
-            <Button plain>默认按钮</Button>
-            <Button type="primary" plain>主要按钮</Button>
-            <Button type="success" plain>成功按钮</Button>
-            <Button type="info" plain>信息按钮</Button>
-            <Button type="warning" plain>警告按钮</Button>
-            <Button type="danger" plain>危险按钮</Button>
+            <imm-button plain>默认按钮</imm-button>
+            <imm-button type="primary" plain>主要按钮</imm-button>
+            <imm-button type="success" plain>成功按钮</imm-button>
+            <imm-button type="info" plain>信息按钮</imm-button>
+            <imm-button type="warning" plain>警告按钮</imm-button>
+            <imm-button type="danger" plain>危险按钮</imm-button>
         </div>
         <div>
-            <Button round>默认按钮</Button>
-            <Button type="primary" round>主要按钮</Button>
-            <Button type="success" round>成功按钮</Button>
-            <Button type="info" round>信息按钮</Button>
-            <Button type="warning" round>警告按钮</Button>
-            <Button type="danger" round>危险按钮</Button>
+            <imm-button round>默认按钮</imm-button>
+            <imm-button type="primary" round>主要按钮</imm-button>
+            <imm-button type="success" round>成功按钮</imm-button>
+            <imm-button type="info" round>信息按钮</imm-button>
+            <imm-button type="warning" round>警告按钮</imm-button>
+            <imm-button type="danger" round>危险按钮</imm-button>
         </div>
         <div>
-            <Button icon="Edit">默认按钮</Button>
-            <Button type="primary" icon="Love">主要按钮</Button>
-            <Button type="success" icon="User">成功按钮</Button>
-            <Button type="info" icon="Home">信息按钮</Button>
-            <Button type="warning" icon="Setting">警告按钮</Button>
-            <Button type="danger" icon="Delete" iconPosition="right">危险按钮</Button>
+            <imm-button icon="Edit">默认按钮</imm-button>
+            <imm-button type="primary" icon="Love">主要按钮</imm-button>
+            <imm-button type="success" icon="User">成功按钮</imm-button>
+            <imm-button type="info" icon="Home">信息按钮</imm-button>
+            <imm-button type="warning" icon="Setting">警告按钮</imm-button>
+            <imm-button type="danger" icon="Delete" iconPosition="right">危险按钮</imm-button>
         </div>
         <div>
-            <Button icon="Edit" circle></Button>
-            <Button type="primary" icon="Love" circle></Button>
-            <Button type="success" icon="User" circle></Button>
-            <Button type="info" icon="Home" circle></Button>
-            <Button type="warning" icon="Setting" circle></Button>
-            <Button type="danger" icon="Delete" circle></Button>
+            <imm-button icon="Edit" circle></imm-button>
+            <imm-button type="primary" icon="Love" circle></imm-button>
+            <imm-button type="success" icon="User" circle></imm-button>
+            <imm-button type="info" icon="Home" circle></imm-button>
+            <imm-button type="warning" icon="Setting" circle></imm-button>
+            <imm-button type="danger" icon="Delete" circle></imm-button>
         </div>
     </div>
     <div>
         <p>图标</p>
         <div class="icon-table">
             <div class="icon-cell" v-for="name in icons" :key="name">
-                <Icon :name="name" color="#f00" size="24px"></Icon>
+                <imm-icon :name="name" color="#f00" size="24px"></imm-icon>
                 <span>{{name}}</span>
             </div>
         </div>
     </div>
     <div>
         <p>链接</p>
-      <Link>默认链接</Link>
-      <Link type="primary">主要链接</Link>
-      <Link type="success">成功链接</Link>
-      <Link type="info">信息链接</Link>
-      <Link type="warning">警告链接</Link>
-      <Link type="danger">危险链接</Link>
+      <imm-link>默认链接</imm-link>
+      <imm-link type="primary">主要链接</imm-link>
+      <imm-link type="success">成功链接</imm-link>
+      <imm-link type="info">信息链接</imm-link>
+      <imm-link type="warning">警告链接</imm-link>
+      <imm-link type="danger">危险链接</imm-link>
 
-      <Link type="primary" disabled>默认链接</Link>
-      <Link type="primary" disabled>主要链接</Link>
-      <Link type="success" disabled>成功链接</Link>
-      <Link type="info" disabled>信息链接</Link>
-      <Link type="warning" disabled>警告链接</Link>
-      <Link type="danger" disabled>危险链接</Link>
+      <imm-link type="primary" disabled>默认链接</imm-link>
+      <imm-link type="primary" disabled>主要链接</imm-link>
+      <imm-link type="success" disabled>成功链接</imm-link>
+      <imm-link type="info" disabled>信息链接</imm-link>
+      <imm-link type="warning" disabled>警告链接</imm-link>
+      <imm-link type="danger" disabled>危险链接</imm-link>
 
-      <Link type="primary">无下划线链接</Link>
-      <Link type="primary" underline>有下划线链接</Link>
+      <imm-link type="primary">无下划线链接</imm-link>
+      <imm-link type="primary" underline>有下划线链接</imm-link>
     </div>
 </template>
 <script lang="ts" setup>
-import { Button, Icon, Link } from 'imm-ui'
+// import { Button, Icon, Link } from 'imm-ui'
 // import { getCurrentInstance } from 'vue';
 const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 // const { proxy } = getCurrentInstance()
@@ -110,5 +110,8 @@ const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', '
 }
 .imm-link {
   margin-right: 10px;
+}
+.imm-button {
+  margin:10px 5px !important
 }
 </style>

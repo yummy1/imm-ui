@@ -1,7 +1,8 @@
 import {createApp} from 'vue'
 import App from './app.vue'
 const app = createApp(App)
-import immui from 'imm-ui'
+import immUI from 'imm-ui'
+import "imm-ui/lib/src/theme-chalk/index.css"
 // import vTracking from '@imm-ui/tracking'
 // app.use(vTracking, {
 //     baseParams: {
@@ -10,5 +11,5 @@ import immui from 'imm-ui'
 //     },
 //     prefix: "app"
 // })
-app.use(immui)
+app.use(immUI)
 app.mount('#app')

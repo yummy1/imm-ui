@@ -5,12 +5,13 @@ import DefaultTheme from "vitepress/theme";
 import "vitepress-theme-demoblock/theme/styles/index.css"
 // 导入插件的主题
 import { registerComponents } from "./register-components.js"
-import imm from 'imm-ui'
+import immUI from 'imm-ui'
+import "imm-ui/lib/src/theme-chalk/index.css"
 
 export default {
   ...DefaultTheme,
   enhanceApp: async ({ app, router, siteData, isServer }) => {
-    app.use(imm)
+    app.use(immUI)
 
     registerComponents(app);
   },

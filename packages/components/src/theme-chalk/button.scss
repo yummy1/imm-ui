@@ -1,0 +1,82 @@
+@import "./common/index.scss";
+.imm-button {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: $--color-white;
+  border: 1px solid $--border-color-base;
+  color: $--color-text-regular;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  transition: 0.1s;
+  font-weight: 500;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  & [class*=imm-icon]+span {
+    margin-left: 6px;
+  }
+  & span+[class*=imm-icon] {
+    margin-left: 6px;
+  }
+
+  &:hover {
+    color: $--color-primary;
+    border-color: $--color-primary-light-7;
+    background-color: $--color-primary-light-9;
+  }
+  &.is-disabled {
+    color: $--color-text-placeholder;
+    cursor: not-allowed;
+    background-image: none;
+    background-color: $--color-white;
+    border-color: $--border-color-lighter;
+  }
+  &.is-circle {
+    border-radius: 50%;
+    padding: 8px;
+  }
+
+  .is-round {
+    border-radius: 20px;
+  }
+}
+
+// size
+.imm-button--medium {
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.imm-button--small {
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.imm-button--mini {
+  padding: 7px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+
+.imm-button--primary {
+  @include button-variant($--color-white, $--color-primary, $--color-primary);
+}
+.imm-button--success {
+  @include button-variant($--color-white, $--color-success, $--color-success);
+}
+.imm-button--info {
+  @include button-variant($--color-white, $--color-info, $--color-info);
+}
+.imm-button--warning {
+  @include button-variant($--color-white, $--color-warning, $--color-warning);
+}
+.imm-button--danger {
+  @include button-variant($--color-white, $--color-danger, $--color-danger);
+}
