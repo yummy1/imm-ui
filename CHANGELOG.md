@@ -1,5 +1,12 @@
 
 
+### [1.3.2](https://e.coding.net/yummy1/cicd/imm-ui/compare/1.3.1...1.3.2) (2023-06-30)
+
+
+### Features
+
+* 更新工具库路径 ([cc3dce6](https://e.coding.net/yummy1/cicd/imm-ui/commit/cc3dce68082d1337683f4bc7286d1b497313ec07))
+
 ### [1.3.1](https://e.coding.net/yummy1/cicd/imm-ui/compare/1.3.0...1.3.1) (2023-06-30)
 
 

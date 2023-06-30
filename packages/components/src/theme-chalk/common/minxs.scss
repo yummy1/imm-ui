@@ -1,4 +1,25 @@
 @import "./variables.scss";
+$namespace: 'imm';
+$element-separator: '__';
+$modifier-separator: '--';
+$state-prefix: 'is-';
+/* BEM
+ -------------------------- */
+@mixin b($block) {
+  $B: $namespace+'-'+$block !global;
+
+  .#{$B} {
+    @content;
+  }
+}
+@mixin when($state) {
+  @at-root {
+    &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+
 @mixin button-variant($color, $background-color, $border-color) {
   color: $color;
   background-color: $background-color;
