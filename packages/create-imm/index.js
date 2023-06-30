@@ -47,7 +47,7 @@ const options = commandLineArgs(optionDefinitions);
 
 const promptsOptions = [
     {
-        type: 'text',//单选
+        type: 'text',//输入
         name: 'name',
         message: 'project-name',
         validate(val) {
@@ -64,7 +64,7 @@ const promptsOptions = [
         message: 'select a framework',
         choices: [
             { title: 'imm-ui', value: 1 },
-            { title: 'imm-demo', value: 2 }
+            { title: 'element-ui', value: 2 }
         ]
     }
 ]
@@ -91,6 +91,7 @@ const gitClone = (remote, name, option) => {
 };
 const remoteList = {
     1: "https://github.com/yummy1/imm-ui.git",
+    2: "https://github.com/element-plus/element-plus.git",
 }
 const branch = 'master'
 const getInputInfo = async () => {
