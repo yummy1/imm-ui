@@ -41,7 +41,7 @@
 }
 </style>
 <script lang="ts" setup>
-    const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
+    const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose', 'Loading']
 </script>
 # Icon 图标
 提供了一套常用的图标集合。
@@ -65,7 +65,6 @@
 </div>
 </template>
 <script lang="ts" setup>
-import { Icon } from "imm-ui";
 const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
 </script>
 ```
@@ -99,7 +98,6 @@ const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', '
 </div>
 </template>
 <script lang="ts" setup>
-import { Icon } from "imm-ui";
 </script>
 ```
 </details>

@@ -20,6 +20,7 @@
     a:hover {
       all: initial
     }
+
 </style>
 
 # Button 按钮
@@ -31,12 +32,11 @@
 <div class="example">
     <div>
         <imm-button>默认按钮</imm-button>
-        <imm-button icon="edit" type="primary">主要按钮</imm-button>
+        <imm-button type="primary">主要按钮</imm-button>
         <imm-button type="success">成功按钮</imm-button>
         <imm-button type="info">信息按钮</imm-button>
         <imm-button type="warning">警告按钮</imm-button>
         <imm-button type="danger">危险按钮</imm-button>
-        <imm-button type="text">文字按钮</imm-button>
         <br>
         <br>
         <imm-button plain>朴素按钮</imm-button>
@@ -105,12 +105,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import "imm-ui/lib/src/theme-chalk/index.css"
 </script>
-<style>
-.imm-button {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 
@@ -144,12 +140,8 @@ import "imm-ui/lib/src/theme-chalk/index.css"
   </div>
 </template>
 <script lang="ts" setup>
-import { Button } from "imm-ui";
 </script>
-<style>
-.imm-button {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 
@@ -199,15 +191,35 @@ import { Button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { Button } from "imm-ui";
 </script>
-<style>
-.imm-button {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 
+</details>
+
+## 加载中
+
+<div class="example">
+    <div>
+        <imm-button type="primary" loading>默认按钮</imm-button>
+    </div>
+</div>
+
+<details>
+<summary>展开查看</summary>
+
+```vue
+<template>
+  <div>
+    <imm-button type="primary" loading>加载中</imm-button>
+  </div>
+</template>
+<script lang="ts" setup>
+</script>
+<style lang="scss" scoped>
+</style>
+```
 </details>
 
 ## 调整尺寸
@@ -234,12 +246,8 @@ import { Button } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { Button } from "imm-ui";
 </script>
-<style>
-.imm-button {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 

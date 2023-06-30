@@ -93,12 +93,8 @@
   </div>
 </template>
 <script lang="ts" setup>
-import { Link } from "imm-ui";
 </script>
-<style>
-.imm-link {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 
@@ -132,12 +128,8 @@ import { Link } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { Link } from "imm-ui";
 </script>
-<style>
-.imm-link {
-  margin-right: 10px;
-}
+<style lang="scss" scoped>
 </style>
 ```
 
@@ -163,20 +155,41 @@ import { Link } from "imm-ui";
   </div>
 </template>
 <script lang="ts" setup>
-import { Link } from "imm-ui";
 </script>
-<style>
-.imm-link {
-  margin-right: 10px;
-}
-</style>
 ```
 
 </details>
 
-## Button属性
+## 图标
+
+<div class="example">
+    <div>
+        <imm-link type="primary" icon="Edit">编辑</imm-link>
+        <imm-link type="primary" icon="Remove" iconPosition="right">删除</imm-link>
+    </div>
+</div>
+
+<details>
+<summary>展开查看</summary>
+
+```vue
+<template>
+  <div>
+    <imm-link type="primary" icon="Edit">编辑</imm-link>
+    <imm-link type="primary" icon="Remove" iconPosition="right">删除</imm-link>
+  </div>
+</template>
+<script lang="ts" setup>
+</script>
+```
+
+</details>
+
+## Link属性
 |    属性    | 说明                         | 类型         | 可选值                                       | 默认值 |
 | --------- | ------------------------------------ | ------------------ | ----------------------------------------------------- | ------- |
 | type      | 类型                                  | string             | primary / success / warning / danger / info / default | default |
 | disabled  | 是否禁用                               | boolean            | —                                                     | false   |
 | underline | 是否显示下划线                          | boolean            | —                                                     | false   |
+| icon      | 图标组件                               | string             | —                                                     | -       |
+| icon-position      | 图标位置                      | string             | left / right                                          | left    |

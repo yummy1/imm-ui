@@ -35,3 +35,14 @@
     border-radius: 100%;
   }
 }
+.imm-icon-loading {
+  animation: rotating 2s linear infinite;
+}
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}

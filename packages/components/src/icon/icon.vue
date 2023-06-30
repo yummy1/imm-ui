@@ -1,5 +1,5 @@
 <template>
-    <div class="imm-icon">
+    <div class="imm-icon" :class="{'imm-icon-loading': iconName === '#imm-Loading'}">
         <svg class="icon" :style="style" aria-hidden="true">
             <use :xlink:href="iconName"></use>
         </svg>
@@ -8,7 +8,6 @@
 </template>
  <script lang="ts">
 
- // import './style/index.less'
  import { defineComponent, computed, onMounted } from 'vue'
  import { iconProps } from './types'
  import type { CSSProperties } from 'vue'

@@ -26,7 +26,6 @@ export default defineComponent({
 });
 </script>
 <script setup lang="ts">
-// import './style/index.less'
 import { ref } from 'vue'
 import Icon from '../icon/icon.vue'
 import { uoloadType } from './types'

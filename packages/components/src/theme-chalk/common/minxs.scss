@@ -3,6 +3,7 @@ $namespace: 'imm';
 $element-separator: '__';
 $modifier-separator: '--';
 $state-prefix: 'is-';
+
 /* BEM
  -------------------------- */
 @mixin b($block) {
@@ -15,6 +16,19 @@ $state-prefix: 'is-';
 @mixin when($state) {
   @at-root {
     &.#{$state-prefix + $state} {
+      @content;
+    }
+  }
+}
+@mixin m($modifier) {
+  $selector: &;
+  $currentSelector: "";
+  @each $unit in $modifier {
+    $currentSelector: #{$currentSelector + & + $modifier-separator + $unit + ","};
+  }
+
+  @at-root {
+    #{$currentSelector} {
       @content;
     }
   }
@@ -88,4 +102,17 @@ $state-prefix: 'is-';
       border-color: mix($--color-white, $color, 80%);
     }
   }
+}
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  border-radius: $border-radius;
+  &.is-round {
+    padding: $padding-vertical $padding-horizontal;
+  }
+}
+@mixin utils-user-select($value) {
+  -moz-user-select: $value;
+  -webkit-user-select: $value;
+  -ms-user-select: $value;
 }

@@ -49,6 +49,9 @@
             <imm-button type="warning" icon="Setting" circle></imm-button>
             <imm-button type="danger" icon="Delete" circle></imm-button>
         </div>
+        <div>
+            <imm-button type="primary" loading>加载中</imm-button>
+        </div>
     </div>
     <div>
         <p>图标</p>
@@ -77,12 +80,15 @@
 
       <imm-link type="primary">无下划线链接</imm-link>
       <imm-link type="primary" underline>有下划线链接</imm-link>
+
+      <imm-link type="primary" icon="Edit">编辑</imm-link>
+      <imm-link type="primary" icon="Remove" iconPosition="right">删除</imm-link>
     </div>
 </template>
 <script lang="ts" setup>
 // import { Button, Icon, Link } from 'imm-ui'
 // import { getCurrentInstance } from 'vue';
-const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose']
+const icons = ['Edit', 'Love', 'User', 'Home', 'Setting', 'Delete', 'Refresh', 'Search', 'Remove', 'View', 'CirclePlus', 'CircleCheck', 'CircleClose', 'Loading']
 // const { proxy } = getCurrentInstance()
 // proxy.$vtrack({ eventName: 'test1' })
 </script>

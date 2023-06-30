@@ -1,8 +1,9 @@
 
 import { ExtractPropTypes } from 'vue'
 
-
 export const LinkType = ['primary', 'success', 'info', 'warning', 'danger']
+
+export const IconPosition = ['left', 'right']
 
 
 export const linkProps = {
@@ -15,7 +16,14 @@ export const linkProps = {
     disabled: Boolean,
     underline: {
         type: Boolean,
-    }
+    },
+    icon: String,
+    iconPosition: {
+        type: String,
+        validator(value: string) {
+            return IconPosition.includes(value)
+        }
+    },
 }
 
 export type LinkProps = ExtractPropTypes<typeof linkProps>

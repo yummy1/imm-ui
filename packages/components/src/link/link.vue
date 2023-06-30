@@ -1,15 +1,18 @@
 <template>
     <a v-bind="attrs" class="imm-link" :class="styleClass">
-        <slot />
+        <Icon v-if="iconFont.iconName && iconFont.position != 'right'" :name="iconFont.iconName" />
+        <span><slot /></span>
+        <Icon v-if="iconFont.iconName && iconFont.position == 'right'" :name="iconFont.iconName" />
     </a>
 </template>
 <script lang="ts">
-// import './style/index.less'
 import { linkProps } from './types'
 import { defineComponent, useAttrs, computed } from 'vue'
+import Icon from '../icon/icon.vue'
 export default defineComponent({
     name: 'imm-link',
     props: linkProps,
+    components: { Icon },
     setup(props) {
         const attrs = useAttrs()
         const styleClass = computed(() => {
@@ -19,9 +22,19 @@ export default defineComponent({
                 'is-underline': props.underline,
             }
         })
+        //图标
+        const iconFont = computed(() => {
+            const iconName = props.icon
+            const position = props.iconPosition
+            return {
+              iconName,
+              position
+            }
+        })
         return {
             attrs,
-            styleClass
+            styleClass,
+            iconFont
         }
     }
 });
