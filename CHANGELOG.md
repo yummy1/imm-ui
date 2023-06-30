@@ -1,5 +1,21 @@
 
 
+## [1.3.0](https://e.coding.net/yummy1/cicd/imm-ui/compare/1.2.0...1.3.0) (2023-06-29)
+
+
+### Features
+
+* 修复问题 ([315e3fc](https://e.coding.net/yummy1/cicd/imm-ui/commit/315e3fc0a5b8775f62910e551d01570efaedcd64))
+* 修改travis配置 ([cc67fe9](https://e.coding.net/yummy1/cicd/imm-ui/commit/cc67fe9fa694e3e865b63c3969ea5b74db314d0e))
+* 修改打包配置 ([fbcfaae](https://e.coding.net/yummy1/cicd/imm-ui/commit/fbcfaaee82809358b6bf8651e6a4b3655f613724))
+* 修改打包问题 ([887c4dc](https://e.coding.net/yummy1/cicd/imm-ui/commit/887c4dceddd9ac849825b4a52998bb78612d0178))
+* 修改语法 ([bdd4eef](https://e.coding.net/yummy1/cicd/imm-ui/commit/bdd4eefa51e989aba8833bd8be8fdf077732baa9))
+* 修改配置 ([b4a444a](https://e.coding.net/yummy1/cicd/imm-ui/commit/b4a444a4b6bfca899691c5e37c3e58d545835ec2))
+* 修改配置 ([fca4519](https://e.coding.net/yummy1/cicd/imm-ui/commit/fca451969312fffd0594bed9bc16d13d20b3a5e8))
+* 去除travis集成，添加github actions集成 ([c3e350f](https://e.coding.net/yummy1/cicd/imm-ui/commit/c3e350fab556dfa3e6c9024216c4a15a4f717e4d))
+* 完善链接 ([c9a2ed9](https://e.coding.net/yummy1/cicd/imm-ui/commit/c9a2ed944cad9721b28d6d7748da4d03924a91d2))
+* 样式预处理器更换 ([eab141f](https://e.coding.net/yummy1/cicd/imm-ui/commit/eab141fec012a06247233a225130895aaecc5dfb))
+
 ## [1.2.0](https://e.coding.net/yummy1/cicd/imm-ui/compare/1.1.0...1.2.0) (2022-12-27)
 
 

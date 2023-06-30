@@ -1,4 +1,4 @@
-import { isString } from './types'
+import { isString } from '../types'
 
 class ElementPlusError extends Error {
     constructor(m: string) {

@@ -16,7 +16,7 @@ export default defineConfig(
             emptyOutDir: false,
             rollupOptions: {
                 //忽略打包vue文件
-                external: ['vue', /\.scss/, '@imm-ui/utils'], // /\.less/
+                external: ['vue', /\.scss/, /\.less/, '@imm-ui/utils'], // /\.less/
                 input: ['index.ts'],
                 output: [
                     {

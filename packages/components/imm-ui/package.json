@@ -19,7 +19,7 @@
     "vue3组件库"
   ],
   "dependencies": {
-    "@imm-ui/utils": "1.0.0"
+    "@imm-ui/utils": "1.0.2"
   },
   "devDependencies": {
     "release-it": "^15.5.0"

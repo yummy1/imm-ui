@@ -10,6 +10,7 @@
     "docs:build": "pnpm run --filter ./docs docs:build",
     "docs:serve": "pnpm run --filter ./docs docs:serve",
     "examples:dev": "pnpm run --filter ./examples dev",
+    "utils:build": "pnpm run --filter ./packages/utils build",
     "test": "pnpm run --filter ./packages/components test",
     "coverage": "pnpm run --filter ./packages/components coverage"
   },
