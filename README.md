@@ -37,3 +37,7 @@ pnpm run test
 ## 查看测试覆盖率
 
 pnpm run coverage
+
+## 工具库打包
+
+pnpm run docs:serve
