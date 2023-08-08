@@ -1,6 +1,6 @@
 name: Publish docs to github actions
 
-# 当 master 分支 push 代码的时候触发 workflow
+# 当 master 分支 push 代码的时候触发 workflows
 on:
   push:
     branches:
@@ -32,7 +32,7 @@ jobs:
       - name: Install
           run: pnpm install
 
-      # This step installs the ssh client into the workflow run. There's many options available for this on the action marketplace.
+      # This step installs the ssh client into the workflows run. There's many options available for this on the action marketplace.
       - name: Install SSH Client
           uses: webfactory/ssh-agent@v0.2.0
           with:
