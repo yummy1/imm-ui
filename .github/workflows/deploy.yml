@@ -39,7 +39,7 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
         env:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          SSH_AUTH_SOCK: /tmp/ssh-auth.sock
       # 发布pages
       - name: Build and Deploy Repo
         uses: JamesIves/github-pages-deploy-action@releases/v4
