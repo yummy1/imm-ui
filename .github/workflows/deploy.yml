@@ -36,10 +36,8 @@ jobs:
       # This step installs the ssh client into the workflows run. There's many options available for this on the action marketplace.
       - name: Install SSH Client
         uses: webfactory/ssh-agent@v0.2.0
-        with:
-          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
         env:
-          SSH_AUTH_SOCK: /tmp/ssh-auth.sock
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
       # 发布pages
       - name: Build and Deploy Repo
         uses: JamesIves/github-pages-deploy-action@releases/v4
