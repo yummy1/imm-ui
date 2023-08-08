@@ -35,7 +35,7 @@ jobs:
         run: pnpm install
       # This step installs the ssh client into the workflows run. There's many options available for this on the action marketplace.
       - name: Install SSH Client
-        uses: webfactory/ssh-agent@v0.2.0
+        uses: webfactory/ssh-agent@v0.4.1
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
         env:
