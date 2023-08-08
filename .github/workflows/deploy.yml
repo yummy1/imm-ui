@@ -38,7 +38,7 @@ jobs:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
       # 发布pages
       - name: Build and Deploy Repo
-        uses: JamesIves/github-pages-deploy-action@releases/v3-test
+        uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
           BASE_BRANCH: master
           BRANCH: gh-pages
