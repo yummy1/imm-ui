@@ -38,6 +38,8 @@ jobs:
         uses: webfactory/ssh-agent@v0.2.0
         with:
           ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+        env:
+          SSH_AUTH_SOCK: /tmp/ssh-auth.sock
       # 发布pages
       - name: Build and Deploy Repo
         uses: JamesIves/github-pages-deploy-action@releases/v4
