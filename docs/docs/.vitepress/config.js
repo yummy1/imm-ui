@@ -1,4 +1,6 @@
-export default {
+import { defineConfig } from 'vitepress'
+import { demoblockPlugin, demoblockVitePlugin } from 'vitepress-theme-demoblock'
+export default defineConfig({
     base: process.env.NODE_ENV === 'production' ? '/imm-ui/' : '/',
     themeConfig: {
       siteTitle: false,
@@ -52,6 +54,14 @@ export default {
             ],
           },
         ],
-      },
+      }
     },
-};
+    markdown: {
+      config: (md) => {
+        md.use(demoblockPlugin)
+      }
+    },
+    vite: {
+      plugins: [demoblockVitePlugin()]
+    }
+})

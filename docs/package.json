@@ -1,20 +1,21 @@
 {
   "name": "docs",
   "version": "1.0.0",
+  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docs:dev": "vitepress dev . --host --port 9999",
-    "docs:build": "vitepress build .",
-    "docs:serve": "vitepress serve .",
+    "docs:dev": "pnpm run register:components && vitepress dev docs --host --port 9999",
+    "docs:build": "pnpm run register:components && vitepress build docs",
+    "docs:serve": "vitepress serve docs",
     "register:components": "vitepress-rc"
   },
   "keywords": [],
   "author": "yummyMao",
   "license": "ISC",
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.33",
-    "vitepress-theme-demoblock": "^1.4.2"
+    "vitepress": "^1.0.0-beta.3",
+    "vitepress-theme-demoblock": "^3.0.3"
   },
   "dependencies": {
     "@imm-ui/utils": "workspace:^1.0.0",
