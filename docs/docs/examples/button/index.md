@@ -1,6 +1,7 @@
 <style>
-.imm-button {
+.demoblock-view .imm-button {
     margin-top: 10px;
+    height: 40px;
 }
 </style>
 # Button 按钮

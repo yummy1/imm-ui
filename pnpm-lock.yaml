@@ -129,14 +129,14 @@ importers:
   packages/components:
     dependencies:
       '@imm-ui/utils':
-        specifier: workspace:1.0.3
+        specifier: workspace:1.0.4
         version: link:../utils
 
   packages/components/imm-ui:
     dependencies:
       '@imm-ui/utils':
         specifier: 1.0.3
-        version: link:../../utils
+        version: 1.0.3
     devDependencies:
       release-it:
         specifier: ^15.5.0
@@ -657,6 +657,10 @@ packages:
   /@iarna/toml@2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
     dev: true
+
+  /@imm-ui/utils@1.0.3:
+    resolution: {integrity: sha512-J7MTLrzLILix3TMPh6noT4/fQGrRw++7A5XUh8FNffc43SSBfW7Fts9Tysy/o8iFGN7LWkO2cBRZG6+eLlHS1Q==}
+    dev: false
 
   /@istanbuljs/schema@0.1.3:
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
